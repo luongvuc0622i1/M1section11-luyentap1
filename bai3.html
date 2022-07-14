@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài 3</title>
+</head>
+<body>
+<script>
+  let num = 20;
+  let m = 0;
+  let n = 1;
+  let fib;
+  document.write(m + "<br>");
+  document.write(n + "<br>");
+  for (fib = 0; fib <= 100 ; fib++) {
+      for (i=3;i<=num;i++) {
+          fib = m + n;
+          document.write(fib + "<br>");
+          m = n;
+          n = fib;
+      }
+
+  }
+
+</script>
+</body>
+</html>
