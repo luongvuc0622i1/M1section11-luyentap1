@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài 5</title>
+</head>
+<body>
+<script>
+    let num = 20;
+    let m = 0;
+    let n = 1;
+    let fib;
+    let sum = 1
+    for (fib = 0; fib <= 100 ; fib++) {
+        for (i=3;i<=num;i++) {
+            fib = m + n;
+            sum += fib
+            m = n;
+            n = fib;
+        }
+    }
+    document.write("Tổng của " + num + " số đầu tiên trong dãy fibonacci là: " + sum);
+</script>
+</body>
+</html>
