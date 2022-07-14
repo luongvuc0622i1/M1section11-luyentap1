@@ -5,6 +5,20 @@
     <title>Bài 4</title>
 </head>
 <body>
-
+<script>
+  let num = 20;
+  let m = 0;
+  let n = 1;
+  let fib;
+  for (fib = 0; fib <= 100 ; fib++) {
+    fib = m + n;
+    if (fib % 5 == 0) {
+      alert ("Số đầu tiên trong dãy fibonacci chia hết cho 5 là: " + fib);
+      break;
+    }
+    m = n;
+    n = fib;
+  }
+</script>
 </body>
 </html>
